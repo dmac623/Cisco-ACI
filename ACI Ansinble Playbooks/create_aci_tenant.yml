@@ -1,0 +1,40 @@
+---
+- name: Create Tenant in Cisco ACI
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  collections:
+    - cisco.aci
+
+  vars_prompt:
+    - name: apic_url
+      prompt: "Enter APIC URL (e.g. https://apic.example.com)"
+      private: no
+
+    - name: username
+      prompt: "Enter APIC username"
+      private: no
+
+    - name: password
+      prompt: "Enter APIC password"
+      private: yes
+
+    - name: tenant_name
+      prompt: "Enter Tenant Name"
+      private: no
+
+    - name: tenant_description
+      prompt: "Enter Tenant Description"
+      private: no
+
+  tasks:
+    - name: Create Tenant
+      cisco.aci.aci_tenant:
+        host: "{{ apic_url }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        tenant: "{{ tenant_name }}"
+        description: "{{ tenant_description }}"
+        use_ssl: yes
+        validate_certs: no
+        state: present
