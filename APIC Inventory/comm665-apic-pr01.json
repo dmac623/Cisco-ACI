@@ -1,0 +1,12 @@
+{
+    "Hostname": "comm665-apic-pr01",
+    "Mgmt IP": "10.17.242.30",
+    "Device Type": "Cisco ACI APIC",
+    "Vendor": "Cisco Systems, Inc",
+    "Model": "APIC-SERVER-L3",
+    "Software Version": "6.0(3e)",
+    "Serial Number": "WMP260400UE",
+    "Site": "My Network\\Auto Site\\ACI\\665 Comm ACI",
+    "First Discovery Time": "2023-08-16T18:25:33Z",
+    "Last Discovery Time": "2025-03-21T01:37:54Z"
+}
