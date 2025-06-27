@@ -1,1 +1,8 @@
+- name: Create Application Profiles
+  cisco.aci.aci_ap:
+    tenant: "{{ aci_tenant }}"
+    ap: "{{ item }}"
+    state: present
+    validate_certs: no
+  loop: "{{ app_profiles_list }}"
 
