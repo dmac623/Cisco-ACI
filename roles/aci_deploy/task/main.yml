@@ -1,1 +1,16 @@
+---
+- name: Include tenant creation
+  import_tasks: tenant.yml
+
+- name: Include VRF creation
+  import_tasks: vrf.yml
+
+- name: Include application profiles
+  import_tasks: app_profiles.yml
+
+- name: Include bridge domains and subnets
+  import_tasks: bridge_domains.yml
+
+- name: Include EPGs
+  import_tasks: epgs.yml
 
