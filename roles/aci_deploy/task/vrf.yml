@@ -1,1 +1,7 @@
+- name: Create VRF
+  cisco.aci.aci_vrf:
+    tenant: "{{ aci_tenant }}"
+    vrf: "{{ aci_vrf }}"
+    state: present
+    validate_certs: no
 
