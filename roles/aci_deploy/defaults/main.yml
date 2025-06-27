@@ -1,1 +1,7 @@
+aci_tenant: "Tenant_Production"
+aci_vrf: "VRF_Prod"
+aci_app_profiles: "App_Web,App_DB"
+aci_bridge_domains: "BD_Web,BD_DB"
+aci_subnets: []
+aci_epgs: []
 
