@@ -1,1 +1,6 @@
+- name: Create ACI Tenant
+  cisco.aci.aci_tenant:
+    tenant: "{{ aci_tenant }}"
+    state: present
+    validate_certs: no
 
