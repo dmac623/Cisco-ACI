@@ -1,1 +1,5 @@
+app_profiles_list: "{{ aci_app_profiles.split(',') }}"
+bridge_domains_list: "{{ aci_bridge_domains.split(',') }}"
+subnets_list: "{{ aci_subnets | from_json }}"
+epg_list: "{{ aci_epgs | from_json }}"
 
