@@ -1,1 +1,10 @@
+- name: Create EPGs
+  cisco.aci.aci_epg:
+    tenant: "{{ aci_tenant }}"
+    ap: "{{ item.app_profile }}"
+    epg: "{{ item.name }}"
+    bd: "{{ item.bd }}"
+    state: present
+    validate_certs: no
+  loop: "{{ epg_list }}"
 
